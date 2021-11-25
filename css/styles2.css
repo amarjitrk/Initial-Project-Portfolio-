@@ -49,6 +49,7 @@ body {
   color: white;
   border: 2px crimson solid;
   margin-left: 50px;
+  padding: 5px 20px 5px 20px;
 }
 .cta:hover {
   background-color: crimson;
@@ -123,29 +124,45 @@ body {
 /* end of service section */
 
 /* project section */
-#project .project-container {
+/* #project .project-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
+} */
+
+#project .project-header h1 span {
+  color: crimson;
+  /* display: inline-block; */
 }
 #project .project-header {
   font-size: 3rem;
   margin-top: 100px;
-
+  text-align: center;
   letter-spacing: 0.3rem;
 }
-#project .project-header h1 span {
-  color: crimson;
-}
-
-#project .project-info h1 {
+#project .project-item h1 {
   margin-top: 50px;
   font-size: 3rem;
 }
-#project .project-info h2 {
+#project .project-item h2 {
   font-size: 2rem;
 }
-#project .project-info p {
+#project .project-item p {
   font-size: 1.5rem;
+  width: 510px;
 }
+.all-projects {
+  display: flex;
+  border: 2px solid rgb(17, 13, 13);
+  flex-direction: column;
+  align-items: center;
+}
+.project-item {
+  flex: 1;
+}
+/* .all-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+} */
